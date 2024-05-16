@@ -31,7 +31,7 @@ router.get('/entidades/:nipc', function(req, res) {
   axios.get('http://localhost:16000/contratos')
     .then(response => {
       const entidadeFiltrada = response.data.filter(contrato => contrato.NIPC_entidade_comunicante == req.params.nipc);
-      const somaPrecoContratual = entidadeFiltrada.reduce((total, contrato) => total + contrato.precoContratual, 0);
+      const somaPrecoContratual = entidadeFiltrada.reduce((total, contrato) => total + Number(contrato.precoContratual), 0);
       if (entidadeFiltrada.length > 0) {
         res.render('entidade', {
           titulo: 'Detalhes da Entidade',
