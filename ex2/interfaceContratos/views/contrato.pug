@@ -1,0 +1,34 @@
+extends layout
+
+block content
+    .w3-card-4
+        header.w3-container.w3-blue
+            h1= titulo
+        .w3-container 
+            b Id do contrato: 
+            p= contrato._id
+            b Número do Anúncio:
+            p= contrato.nAnuncio
+            b Tipo de Procedimento: 
+            p= contrato.tipoprocedimento
+            b Objecto do Contrato:
+            p= contrato.objectoContrato
+            b Data de Publicação:
+            p= contrato.dataPublicacao
+            b Data de Celebração:
+            p= contrato.dataCelebracaoContrato
+            b Preço Contratual:
+            p= contrato.precoContratual
+            b Prazo de Execução:
+            p= contrato.prazoExecucao
+            b NIPC da entidade comunicante
+            p= contrato.NIPC_entidade_comunicante
+            b Entidade Comunicante
+            p= contrato.entidade_comunicante
+            b Fundamentação
+            p= contrato.fundamentacao
+
+
+        footer.w3-container.w3-blue
+            address Gerado por A100896 em #{data}
+            a.w3-button.w3-blue(href="/") Voltar à lista de contratos 
