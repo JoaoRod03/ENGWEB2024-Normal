@@ -17,7 +17,7 @@
     npm start
     ```
 
-### interfaceContratos
+### interfaceContratos(assuming you are on ex1/apiContratos)
 
 1. Install the required dependencies by running the following commands:
     ```bash
