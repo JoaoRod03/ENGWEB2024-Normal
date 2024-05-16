@@ -1,6 +1,6 @@
 # Instructions
 
-1. Open a Docker container or import it via MongoDB.
+1.Import "contratos.json" using Docker container or via Mongo.
 
 ## apiContratos(assuming you start on ENGWEB2024-Normal)
 
