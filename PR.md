@@ -2,7 +2,7 @@
 
 1.Import "contratos.json" using Docker container or via Mongo.
 
-## apiContratos(assuming you start on ENGWEB2024-Normal)
+### apiContratos(assuming you start on ENGWEB2024-Normal)
 
 1. Install the required dependencies by running the following commands:
     ```bash
@@ -17,7 +17,7 @@
     npm start
     ```
 
-## interfaceContratos
+### interfaceContratos
 
 1. Install the required dependencies by running the following commands:
     ```bash
